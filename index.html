@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Agents</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./src/img/logo.png" alt="Logo Valorant" id="logo">
+    </header>
+    <main class="selecao-agentes">
+        <section class="agentes">
+            <h1 class="titulo">Escolha um agente</h1>
+            <ul class="lista-agentes">
+                <li class="agente selecionado" id="brimstone" onmousedown="soundBrimstone.play()" data-name="Brimstone" data-description="Vindo diretamente dos EUA, o arsenal orbital do Brimstone garante que o esquadrão dele sempre esteja em vantagem. Sua capacidade de oferecer utilitários com precisão e segurança faz dele um comandante inigualável na linha de frente.">
+                    <img src="./src/img/card-brimstone.jpg" alt="Agente Brimstone">
+                </li>
+                <li class="agente" id="phoenix" onmousedown="soundPhoenix.play()" data-name="Phoenix" data-description="Chegando com tudo diretamente do Reino Unido, o poder estelar dele reluz em seu estilo de luta, incendiando o campo de batalha com luz e estilo. Tendo ajuda ou não, ele entra na luta como e quando achar que deve.">
+                    <img src="./src/img/card-phoenix.jpg" alt="Agente Phoenix">
+                </li>
+                <li class="agente" id="sage" onmousedown="soundSage.play()" data-name="Sage" data-description="Como uma verdadeira fortaleza chinesa, ela traz segurança para si mesma e para a equipe aonde quer que vá. Capaz de reviver aliados e rechaçar investidas agressivas, ela oferece um centro de calmaria em meio ao caos da batalha.">
+                    <img src="./src/img/card-sage.jpg" alt="Agente Sage">
+                </li>
+                <li class="agente" id="sova" onmousedown="soundSova.play()" data-name="Sova" data-description="Nascido sob o eterno inverno das tundras russas, ele rastreia, encontra e elimina inimigos com eficiência e precisão. Seu arco personalizado e suas habilidades inigualáveis de reconhecimento garantem que nenhuma presa escape.">
+                    <img src="./src/img/card-sova.jpg" alt="Agente Sova">
+                </li>
+                <li class="agente" id="viper" onmousedown="soundViper.play()" data-name="Viper" data-description="A química dos Estados Unidos, emprega uma variedade de dispositivos químicos venenosos para controlar o campo de batalha e prejudicar a visão do inimigo. Se as toxinas não matarem a presa, seus jogos mentais certamente o farão.">
+                    <img src="./src/img/card-viper.jpg" alt="Agente Viper">
+                </li>
+                <li class="agente" id="cypher" onmousedown="soundCypher.play()" data-name="Cypher" data-description="Um vendedor de informações do Marrocos, é uma verdadeira rede de vigilância de um homem só que fica de olho nos movimento inimigos. Nenhum segredo está a salvo. Nenhuma manobra passa despercebida. Ele está sempre vigiando.">
+                    <img src="./src/img/card-cypher.jpg" alt="Agente Cypher">
+                </li>
+                <li class="agente" id="reyna" onmousedown="soundReyna.play()" data-name="Reyna" data-description="Criada no coração do México, ela domina o combate individual, destacando-se a cada abate efetuado. Sua capacidade só é limitada por sua própria perícia, tornando-a bastante dependente de desempenho.">
+                    <img src="./src/img/card-reyna.jpg" alt="Agente Reyna">
+                </li>
+                <li class="agente" id="killjoy" onmousedown="soundKilljoy.play()" data-name="Killjoy" data-description="Uma alemã genial, defende posições-chave no campo de batalha facilmente com seu arsenal de invenções. Se o dano causado por seu equipamento não der cabo dos inimigos, os efeitos negativos de seus queridos robôs darão conta do recado.">
+                    <img src="./src/img/card-killjoy.jpg" alt="Agente Killjoy">
+                </li>
+                <li class="agente" id="breach" onmousedown="soundBreach.play()" data-name="Breach" data-description="O homem-biônico sueco, dispara poderosos jatos cinéticos para forçar a abertura de um caminho pelo território inimigo. O dano e a interrupção que ele causa garantem que nenhuma luta seja justa.">
+                    <img src="./src/img/card-breach.jpg" alt="Agente Breach">
+                </li>
+                <li class="agente" id="omen" onmousedown="soundOmen.play()" data-name="Omen" data-description="Uma lembrança fantasmagórica, caça nas sombras. Ele cega os inimigos, teleporta-se pelo campo e deixa a paranoia assumir o controle enquanto o adversário tenta descobrir de onde virá seu próximo ataque.">
+                    <img src="./src/img/card-omen.jpg" alt="Agente Omen">
+                </li>
+                <li class="agente" id="jett" onmousedown="soundJett.play()" data-name="Jett" data-description="Representando a Coreia do Sul, sua terra natal, ela tem um estilo de luta ágil e evasivo que permite que ela assuma riscos como ninguém. Corre em meio a qualquer confronto, cortando os inimigos antes que eles percebam quem ou o que os atingiu.">
+                    <img src="./src/img/card-jett.jpg" alt="Agente Jett">
+                </li>
+                <li class="agente" id="raze" onmousedown="soundRaze.play()" data-name="Raze" data-description="Ela chega do Brasil com uma explosão de carisma e armas enormes. Com seu estilo de jogo porradeiro, ela é craque em desentocar inimigos entrincheirados e limpar espaços apertados com uma bela dose de BUUUM!">
+                    <img src="./src/img/card-raze.jpg" alt="Agente Raze">
+                </li>
+                <li class="agente" id="skye" onmousedown="soundSkye.play()" data-name="Skye" data-description="Mandando um salve direto da Austrália, ela e sua equipe de feras desbravam territórios hostis. Com seus poderes de cura e suas criações que partem pra cima dos inimigos, qualquer equipe ficará mais forte e mais segura tendo ela como aliada.">
+                    <img src="./src/img/card-skye.jpg" alt="Agente Skye">
+                </li>
+                <li class="agente" id="yoru" onmousedown="soundYoru.play()" data-name="Yoru" data-description="Nativo do Japão, abre fendas na realidade para infiltrar as linhas inimigas sem ser visto. Ele usa tanto artimanhas quanto táticas agressivas, e os alvos são abatidos sem saber de onde o ataque veio.">
+                    <img src="./src/img/card-yoru.jpg" alt="Agente Yoru">
+                </li>
+                <li class="agente" id="astra" onmousedown="soundAstra.play()" data-name="Astra" data-description="A Agente ganense, utiliza energias cósmicas para moldar o campo de batalha a seu bel-prazer. Com total domínio da sua forma astral e um talento estratégico nato, ela está sempre anos-luz à frente dos inimigos.">
+                    <img src="./src/img/card-astra.jpg" alt="Agente Astra">
+                </li>
+                <li class="agente" id="kayo" onmousedown="soundKayo.play()" data-name="Kay/o" data-description="Uma máquina de guerra construída com um único propósito: neutralizar Radiantes. Capaz de Suprimir habilidades inimigas, anulando a capacidade de contra-ataque dos adversários e dando a si e aos aliados uma vantagem essencial em combate.">
+                    <img src="./src/img/card-kayo.jpg" alt="Agente Kay/o">
+                </li>
+                <li class="agente" id="chamber" onmousedown="soundChamber.play()" data-name="Chamber" data-description="Bem-vestido e armado até os dentes, o criador de armas francês coloca os inimigos para correr com precisão mortal. Use e abuse do arsenal personalizado dele para segurar posições e abater inimigos de longe, criando a defesa perfeita para qualquer plano.">
+                    <img src="./src/img/card-chamber.jpg" alt="Agente Chamber">
+                </li>
+                <li class="agente" id="neon" onmousedown="soundNeon.play()" data-name="Neon" data-description="Nossa Agente filipina, avança em velocidades incríveis, descarregando surtos de radiância bioelétrica tão rapidamente quanto seu corpo consegue gerá-los. Corre à frente para pegar os inimigos de surpresa, abatendo-os rápido como um raio.">
+                    <img src="./src/img/card-neon.jpg" alt="Agente Neon">
+                </li>
+                <li class="agente" id="fade" onmousedown="soundFade.play()" data-name="Fade" data-description="Uma caçadora de recompensas turca, usa o poder dos pesadelos para capturar os segredos dos inimigos. Personificando o próprio terror, ela persegue os alvos e revela seus medos mais profundos para, depois, destruí-los na escuridão.">
+                    <img src="./src/img/card-fade.jpg" alt="Agente Fade">
+                </li>
+                <li class="agente" id="harbor" onmousedown="soundHarbor.play()" data-name="Harbor" data-description="Vindo do litoral indiano, ele entra em campo com a força da tormenta, empunhando tecnologia ancestral com domínio sobre a água. Libera corredeiras espumantes e ondas esmagadoras para proteger seus aliados ou atacar aqueles que se opõem.">
+                    <img src="./src/img/card-harbor.jpg" alt="Agente Harbor">
+                </li>
+                <li class="agente" id="gekko" onmousedown="soundGekko.play()" data-name="Gekko" data-description="De Los Angeles, lidera um grupo muito unido de criaturas caóticas. Seus amigos atropelam tudo, tirando os inimigos do caminho. Depois, corre atrás deles para reagrupá-los e reiniciar o processo.">
+                    <img src="./src/img/card-gekko.jpg" alt="Agente Gekko">
+                </li>
+                <li class="agente" id="deadlock" onmousedown="soundDeadlock.play()" data-name="Deadlock" data-description="A agente norueguesa, posiciona uma gama de nanofios de alta tecnologia para proteger o campo de batalha até mesmo do ataque mais letal. Ninguém escapa do seu olhar vigilante. Ninguém sobrevive à sua ferocidade implacável.">
+                    <img src="./src/img/card-deadlock.jpg" alt="Agente Deadlock">
+                </li>
+            </ul>
+        </section>
+        <section class="agente-selecionado">
+            <img class="agente-grande" src="./src/img/card-brimstone.png" alt="Agente selecionado">
+            <div class="info-agente">
+                <h2 class="nome-agente" id="nome-agente">Brimstone</h2>
+                <p class="descricao-agente" id="descricao-agente">Vindo dos EUA, seu arsenal garante que o esquadrão dele sempre esteja em vantagem. Um comandante inigualável na linha de frente.</p>
+            </div>
+        </section>
+    </main>
+    <!--JS-->
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/brimstone.js"></script>
+    <script src="./src/js/phoenix.js"></script>
+    <script src="./src/js/sage.js"></script>
+    <script src="./src/js/sova.js"></script>
+    <script src="./src/js/viper.js"></script>
+    <script src="./src/js/cypher.js"></script>
+    <script src="./src/js/reyna.js"></script>
+    <script src="./src/js/killjoy.js"></script>
+    <script src="./src/js/breach.js"></script>
+    <script src="./src/js/omen.js"></script>
+    <script src="./src/js/jett.js"></script>
+    <script src="./src/js/raze.js"></script>
+    <script src="./src/js/skye.js"></script>
+    <script src="./src/js/yoru.js"></script>
+    <script src="./src/js/astra.js"></script>
+    <script src="./src/js/kayo.js"></script>
+    <script src="./src/js/chamber.js"></script>
+    <script src="./src/js/neon.js"></script>
+    <script src="./src/js/fade.js"></script>
+    <script src="./src/js/harbor.js"></script>
+    <script src="./src/js/gekko.js"></script>
+    <script src="./src/js/deadlock.js"></script>
+</body>
+
+</html>

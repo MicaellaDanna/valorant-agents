@@ -1,0 +1,55 @@
+@media (max-width: 1120px) {
+  .cabecalho .logo {
+    max-width: 190px;
+  }
+
+  .agentes {
+    justify-content: center;
+  }
+
+  .selecao-agentes {
+    flex-direction: column-reverse;
+    max-width: 430px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .selecao-agentes .agentes {
+    margin-top: 37px;
+  }
+
+  .selecao-agentes .agentes .titulo {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .selecao-agentes .lista-agentes {
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .selecao-agentes .agente img {
+    width: 80px;
+  }
+
+  .agente-selecionado .agente-grande {
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+  }
+
+  .agente-selecionado .descricao-agente {
+    width: 80%;
+    font-size: 16px;
+    margin: 20px auto;
+  }
+}
+
+.selecao-agentes .lista-agentes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: left;
+}
